@@ -1,0 +1,294 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #e0f2fe; /* Light Sky Background */
+  color: #0369a1;
+  line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+  background-color: #0369a1; /* Deep Blue */
+  color: #ffffff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.header p {
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+/* MAIN CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* CONTACT GRID */
+.contact-wrapper {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* FORM SECTION */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  color: #0369a1;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #0369a1;
+  border-radius: 6px;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #1e90ff;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #0369a1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #66c1f3;
+}
+
+/* CONTACT DETAILS */
+.contact-details {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-details h2 {
+  margin-bottom: 20px;
+  color: #0369a1;
+}
+
+.detail-box {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #0369a1;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.detail-box h4 {
+  margin-bottom: 5px;
+  color: #0369a1;
+}
+
+.detail-box p {
+  color: #64748b;
+}
+
+/* MAP SECTION */
+.map-section {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.map-section h2 {
+  margin-bottom: 20px;
+  color: #0a1f44;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* SOCIAL */
+.social-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.social-section h2 {
+  margin-bottom: 15px;
+  color: #0369a1;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #1e90ff;
+  margin: 0 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #64748b;
+}
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+/* Mobile */
+@media (max-width: 575px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .contact-details {
+    width: 100%;
+  }
+
+  .map-section iframe {
+    height: 250px;
+  }
+
+  .social-links a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* Large Mobile */
+@media (min-width: 576px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .contact-details {
+    width: 100%;
+  }
+
+  .map-section iframe {
+    height: 300px;
+  }
+
+  .social-links a {
+    display: inline-block;
+    margin: 0 15px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .contact-details {
+    width: 100%;
+  }
+
+  .map-section iframe {
+    height: 350px;
+  }
+
+  .social-links a {
+    display: inline-block;
+    margin: 0 15px;
+  }
+}
+
+/* Laptop */
+@media (min-width: 992px) {
+  .contact-wrapper {
+    flex-direction: row;
+  }
+
+  .contact-form,
+  .contact-details {
+    width: 50%;
+  }
+
+  .map-section iframe {
+    height: 400px;
+  }
+
+  .social-links a {
+    display: inline-block;
+    margin: 0 15px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .contact-wrapper {
+    flex-direction: row;
+  }
+
+  .contact-form,
+  .contact-details {
+    width: 50%;
+  }
+
+  .map-section iframe {
+    height: 450px;
+  }
+
+  .social-links a {
+    display: inline-block;
+    margin: 0 15px;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1400px) {
+  .contact-wrapper {
+    flex-direction: row;
+  }
+
+  .contact-form,
+  .contact-details {
+    width: 50%;
+  }
+
+  .map-section iframe {
+    height: 500px;
+  }
+
+  .social-links a {
+    display: inline-block;
+    margin: 0 15px;
+  }
+}
