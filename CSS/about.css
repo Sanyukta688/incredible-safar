@@ -117,12 +117,30 @@ section h2 {
 }
 
 /* TERMS */
+.terms {
+  max-width: 500px;
+  margin: auto;
+}
+
+.terms h2 {
+  text-align: center;
+  color: #0369a1;
+  margin-bottom: 15px;
+}
+
 .terms ul {
-  max-width: 600px;
+  list-style-type: disc;
+  width: fit-content;
   margin: auto;
   text-align: left;
+}
+
+.terms ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
   color: #64748b;
 }
+
 
 /* TESTIMONIAL */
 .testimonials img {
@@ -192,6 +210,7 @@ footer {
   .footer-container {
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
+    font-size: 10px;
   }
 
   .footer-col {
@@ -208,6 +227,7 @@ footer {
   .footer-container {
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
+    font-size: 12px;
   }
 
   .footer-col {
@@ -224,6 +244,7 @@ footer {
   .footer-container {
     grid-template-columns: repeat(4, 1fr);
     text-align: left;
+    font-size: 14px;
   }
 
   .footer-col {
@@ -240,6 +261,7 @@ footer {
   .footer-container {
     grid-template-columns: repeat(4, 1fr);
     text-align: left;
+    font-size: 16px;
   }
 
   .footer-col {
@@ -256,6 +278,7 @@ footer {
   .footer-container {
     grid-template-columns: repeat(4, 1fr);
     text-align: left;
+    font-size: 18px;
   }
 
   .footer-col {
@@ -272,6 +295,7 @@ footer {
   .footer-container {
     grid-template-columns: repeat(4, 1fr);
     text-align: left;
+    font-size: 20px;
   }
 
   .footer-col {
