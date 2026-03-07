@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #e0f2fe;
+}
+
+/* Navbar */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  background: #0369a1;
+  gap: 5px;
+  height: 50px;
+}
+
+.logo {
+  padding-left: 10px;
+  height: 90px;
+  width: 70px;
+  margin-top: 6px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav a {
+  padding: 14px 12px;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #64748b;
+}
+
+/* Dashboard */
+
+.dashboard {
+  padding: 50px;
+  text-align: center;
+}
+
+.dashboard h1 {
+  color: #0369a1;
+  margin-bottom: 30px;
+}
+
+/* Cards */
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #0ea5e9;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* Button */
+
+.logout-btn {
+  margin-top: 40px;
+  padding: 10px 30px;
+  background-color: #0369a1;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #0ea5e9;
+}
+
+.scroll-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0369a1;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.scroll-up:hover {
+  background-color: #0ea5e9;
+}
+
+/* Responsive */
+/* Mobile */
+@media (max-width: 575px) {
+  header {
+    flex-direction: row;
+  }
+
+  .dashboard-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large Mobile */
+@media (min-width: 576px) {
+  header {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .dashboard-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .dashboard-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Laptop */
+@media (min-width: 992px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dashboard-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dashboard-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large Screen */
+@media (min-width: 1400px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dashboard-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
