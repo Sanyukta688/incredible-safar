@@ -117,3 +117,183 @@ body {
     font-weight: bold;
     text-decoration: none;
 }
+
+.switch a:hover {
+    text-decoration: underline;
+}
+
+/* MOBILE */
+@media (max-width: 575px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .left {
+        padding: 20px;
+    }
+
+    .right {
+        padding: 20px;
+    }
+
+    .forget {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .switch {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+/* Large Mobile */
+@media (min-width: 576px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .left, .right {
+        width: 50%;
+    }
+
+    .left {
+        padding: 40px;
+    }
+
+    .right {
+        padding: 50px;
+    }
+
+    .forget {
+        text-align: right;
+        margin-right: 40px;
+    }
+
+    .switch {
+        text-align: left;
+        margin-left: 60px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .left, .right {
+        width: 50%;
+    }
+
+    .left {
+        padding: 40px;
+    }
+
+    .right {
+        padding: 50px;
+    }
+
+    .forget {
+        text-align: right;
+        margin-right: 40px;
+    }
+
+    .switch {
+        text-align: left;
+        margin-left: 60px;
+    }
+}
+
+
+/* Laptop */
+@media (min-width: 992px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .left, .right {
+        width: 50%;
+    }
+
+    .left {
+        padding: 40px;
+    }
+
+    .right {
+        padding: 50px;
+    }
+
+    .forget {
+        text-align: right;
+        margin-right: 40px;
+    }
+
+    .switch {
+        text-align: left;
+        margin-left: 60px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .left, .right {
+        width: 50%;
+    }
+
+    .left {
+        padding: 40px;
+    }
+
+    .right {
+        padding: 50px;
+    }
+
+    .forget {
+        text-align: right;
+        margin-right: 40px;
+    }
+
+    .switch {
+        text-align: left;
+        margin-left: 60px;
+    }
+}
+
+
+/* Large Screen */
+@media (min-width: 1400px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .left, .right {
+        width: 50%;
+    }
+
+    .left {
+        padding: 40px;
+    }
+
+    .right {
+        padding: 50px;
+    }
+
+    .forget {
+        text-align: right;
+        margin-right: 40px;
+    }
+
+    .switch {
+        text-align: left;
+        margin-left: 60px;
+    }
+}
