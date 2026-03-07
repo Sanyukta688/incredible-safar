@@ -240,7 +240,7 @@ footer {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #0369A1;
+  background-color: #0369a1;
   color: white;
   padding: 10px 14px;
   border-radius: 50%;
@@ -249,9 +249,8 @@ footer {
 }
 
 .scroll-up:hover {
-  background-color: #0EA5E9;
+  background-color: #0ea5e9;
 }
-
 
 /* Mobile */
 @media (max-width: 575px) {
@@ -289,6 +288,24 @@ footer {
   .packages-grid {
     grid-template-columns: 1fr;
   }
+
+  .footer-container {
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+  }
+
+  .footer-col h3 {
+    margin-bottom: 30px;
+    font-size: 12px;
+  }
+
+  .footer-col p {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    font-size: 10px;
+  }
 }
 
 /* Large Mobile */
@@ -321,6 +338,24 @@ footer {
 
   .packages-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+  }
+
+  .footer-col h3 {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  .footer-col p {
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
   }
 }
 
@@ -357,6 +392,24 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
+
+  .footer-container {
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+  }
+
+  .footer-col h3 {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+
+  .footer-col p {
+    font-size: 16px;
+  }
+
+  .footer-bottom {
+    font-size: 14px;
+  }
 }
 
 /* Laptop */
@@ -379,6 +432,24 @@ footer {
 
   .packages-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+  }
+
+  .footer-col h3 {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .footer-col p {
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
   }
 }
 
@@ -405,6 +476,24 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
   }
+
+  .footer-container {
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+  }
+
+  .footer-col h3 {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .footer-col p {
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
 }
 
 /* Large Screens */
@@ -416,5 +505,23 @@ footer {
   .destinations,
   .packages {
     padding: 80px 100px;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+  }
+
+  .footer-col h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .footer-col p {
+    font-size: 16px;
+  }
+
+  .footer-bottom {
+    font-size: 14px;
   }
 }
